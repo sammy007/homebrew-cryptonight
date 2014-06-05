@@ -4,7 +4,11 @@ Monero (XMR) & Quazarcoin (QCN) formulas for Mac OS X 10.9
 
 Usage
 -----
+First of all you have to add repo:
+
 `brew tap sammy007/cryptonight`
+
+Then you can install daemons and wallets:
 
 `brew install bitmonero --HEAD`
 
