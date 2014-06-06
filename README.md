@@ -1,6 +1,6 @@
 Homebrew-CryptoNight
 ====================
-Monero (XMR) & Quazarcoin (QCN) formulas for Mac OS X 10.9
+Monero (XMR) & Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9.
 
 Wallets
 -------
