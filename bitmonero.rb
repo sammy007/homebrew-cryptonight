@@ -5,7 +5,7 @@ class Bitmonero < Formula
   head "https://github.com/monero-project/bitmonero.git"
 
   depends_on "cmake" => :build
-  depends_on "boost" => "with-icu"
+  depends_on "boost"
   depends_on "miniupnpc"
 
   def install

@@ -5,7 +5,7 @@ class Quazarcoin < Formula
   head "https://github.com/quazarcoin/quazarcoin.git"
 
   depends_on "cmake" => :build
-  depends_on "boost" => "with-icu"
+  depends_on "boost"
   depends_on "miniupnpc"
 
   def install
