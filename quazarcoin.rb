@@ -10,7 +10,6 @@ class Quazarcoin < Formula
 
   def install
     system "make"
-    bin.install "./build/release/src/quazarcoind"
-    bin.install_p "./build/release/src/simplewallet", "simplewallet-qcn"
+    bin.install "./build/release/src/quazarcoind", "./build/release/src/simplewallet"
   end
 end
