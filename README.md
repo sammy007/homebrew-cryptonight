@@ -10,23 +10,25 @@ First of all you have to add repo:
 
 Then you can install daemons and wallets:
 
-`brew install bitmonero --HEAD`
+`brew install --HEAD bitmonero`
 
 Don't forget to download [Mac 64bit blockchain](http://monero.cc/downloads/blockchain/mac/blockchain.bin)
 and copy it to `~/.bitmonero/` directory.
 
-`brew install quazarcoin --HEAD`
+`brew install --HEAD quazarcoin`
 
 There will be conflict, because `simplewallet` appears in both XMR and QCN, so one formula have to be keg-only.
 
 CPU Mining
 ----------
 
-Build CPU miner (you have to use gcc-4.8):
+Build CPU miner:
 
-`brew install cpuminer-multi --HEAD`
+`brew install --HEAD cpuminer-multi`
 
 This is LucasJones's version, I'll switch this formula to much efficient wolf9466's fork as soon as he fix building on OS X.
+
+**Mine with me on** [my qc.hashinvest.ws pool](http://qcn.hashinvest.ws)!
 
 TODO
 ----
