@@ -19,7 +19,7 @@ and copy it to `~/.bitmonero/` directory.
 
 There will be conflict, because `simplewallet` appears in both XMR and QCN, so one formula have to be keg-only.
 
-You can download [Mac 64bit blockchain](https://mega.co.nz/#!lAlmFTQT!QxNg_ykCafG2oAWpA_g5n0Qio6ZHCcGk9097HCVIfGs)
+You can download [Mac 64bit blockchain](https://mega.co.nz/#!wZNwmZzS!QLG989DwzJUkVnG9vPN391IKFiA3w0DPQikmkTyYaDY)
 and move it to `~/.quazarcoin/blockchain.bin` in order to speed up synchronization.
 
 CPU Mining
