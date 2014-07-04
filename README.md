@@ -31,9 +31,9 @@ Build CPU miner:
 
 This is LucasJones's version, I'll switch this formula to much efficient wolf9466's fork as soon as he fix building on OS X.
 
-**Mine Monero on** [xmr.hashinvest.ws](http://xmr.hashinvest.ws) pool.
+**Mine Monero on** [xmr.hashinvest.ws](http://hashinvest.net) pool.
 
-**Mine QuazarCoin on** [qc.hashinvest.ws pool](http://qcn.hashinvest.ws) pool.
+**Mine QuazarCoin on** [qc.hashinvest.ws pool](http://qcn.hashinvest.net) pool.
 
 TODO
 ----
