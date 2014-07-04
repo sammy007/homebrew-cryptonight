@@ -2,6 +2,8 @@ Homebrew-CryptoNight
 ====================
 Monero (XMR) & Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9.
 
+Don't forget to install Command Line Tools for Xcode, otherwise you might get `malloc.h` not found errors.
+
 Wallets
 -------
 First of all you have to add repo:
