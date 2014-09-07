@@ -6,16 +6,28 @@ Don't forget to install Command Line Tools for Xcode, otherwise you might get `m
 
 Wallets
 -------
+
 First of all you have to add repo:
 
 `brew tap sammy007/cryptonight`
 
 Then you can install daemons and wallets:
 
+### Monero
+
 `brew install --HEAD bitmonero`
 
 Don't forget to download [Mac 64bit blockchain](http://monero.cc/downloads/blockchain/mac/blockchain.bin)
 and copy it to `~/.bitmonero/` directory.
+
+### Boolberry
+
+`brew install --HEAD boolberry`
+
+You can download [Mac blockchain.bin](https://mega.co.nz/#!T80CVCpI!ZRJS5fXTURD5wjofDdsC3_H3OBEmUgbox-CJBMzBeLk)
+and move it to `~/Library/Application\ Support/boolb/blockchain.bin`
+
+### Quazar
 
 `brew install --HEAD quazarcoin`
 
@@ -47,5 +59,7 @@ If You Like It
 --------------
 
 **XMR**: `45pyCXYn2UBVUmCFjgKr7LF8hCTeGwucWJ2xni7qrbj6GgAZBFY6tANarozZx9DaQqHyuR1AL8HJbRmqwLhUaDpKJW4hqS1`
+
+**BBR**: `1Cf9omYfkxZ1qwxpSCsQ5PTsf6JX7zKt4L63BFijUFQ1eECK3Dt2agPCu62vSSBnDkXyBr691WVpKC5dw4GiNNySHzF4vS2`
 
 **QCN**: `1N4FnxwCH8WjHDKCEGBzSL1GDY4pMkcyaKmZyDF78CoiGgRPjzPtYyjKTehmaVZPQTRJAxJyF1X9wE7kjQTjDVWKGgdEjoH`
