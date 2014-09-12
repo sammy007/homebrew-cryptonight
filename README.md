@@ -15,7 +15,7 @@ Then you can install daemons and wallets:
 
 ### Monero
 
-`brew install --HEAD bitmonero`
+Install latest stable release: `brew install bitmonero`, or install from git: `brew install --HEAD -v bitmonero`
 
 Don't forget to download [Mac 64bit blockchain](http://monero.cc/downloads/blockchain/mac/blockchain.bin)
 and copy it to `~/.bitmonero/` directory.
