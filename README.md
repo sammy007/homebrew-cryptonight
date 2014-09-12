@@ -49,9 +49,8 @@ This is LucasJones's version, I'll switch this formula to much efficient wolf946
 
 TODO
 ----
-1. Currently formulas are HEAD-only. Will fix soon.
-2. Install `simplewallet` with suffix in order to avoid conflicts.
-3. Switch to wolf9466's fork of cpuminer-multi.
+
+1. Switch to wolf9466's fork of cpuminer-multi.
 
 If You Like It
 --------------
