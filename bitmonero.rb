@@ -9,7 +9,7 @@ class Bitmonero < Formula
 
   depends_on "cmake" => :build
   depends_on "boost"
-  depends_on "miniupnpc"
+  depends_on "miniupnpc" => :optional
 
   def install
     system "make"
