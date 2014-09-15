@@ -3,7 +3,7 @@ require "formula"
 class Bitmonero < Formula
   homepage "http://monero.cc"
   url "https://github.com/monero-project/bitmonero/archive/v0.8.8.4.tar.gz"
-  sha1 "a30a4e7506b3301ead601d7f4f318920f29a4cb1"
+  sha1 "57a0d6cf54a2fb8171b0b746d5c0db1b9eb877c5"
 
   head "https://github.com/monero-project/bitmonero.git"
 
