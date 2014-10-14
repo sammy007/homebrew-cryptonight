@@ -1,6 +1,6 @@
 Homebrew-CryptoNight
 ====================
-Monero (XMR) & Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9.
+Monero (XMR), AEON, Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9.
 
 Don't forget to install Command Line Tools for Xcode, otherwise you might get `malloc.h` not found errors.
 
@@ -19,6 +19,12 @@ Install latest stable release: `brew install bitmonero`, or install from git: `b
 
 Don't forget to download [Mac 64bit blockchain](http://monero.cc/downloads/blockchain/mac/blockchain.bin)
 and copy it to `~/.bitmonero/` directory.
+
+### Aeon
+
+`brew install --HEAD aeon`
+
+There will be conflict, because `simplewallet` appears in both XMR and AEON, so one formula have to be keg-only.
 
 ### Boolberry
 
