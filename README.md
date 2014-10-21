@@ -1,6 +1,6 @@
 Homebrew-CryptoNight
 ====================
-Monero (XMR), AEON, Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9.
+Monero (XMR), AEON, Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9 and 10.10.
 
 Wallets
 -------
