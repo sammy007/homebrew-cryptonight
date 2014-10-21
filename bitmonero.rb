@@ -2,14 +2,19 @@ require "formula"
 
 class Bitmonero < Formula
   homepage "http://monero.cc"
-  url "https://github.com/monero-project/bitmonero/archive/v0.8.8.4.tar.gz"
-  sha1 "57a0d6cf54a2fb8171b0b746d5c0db1b9eb877c5"
 
-  head "https://github.com/monero-project/bitmonero.git"
+  head do
+    url "https://github.com/monero-project/bitmonero.git"
+    depends_on "unbound"
+  end
+
+  stable do
+    url "https://github.com/monero-project/bitmonero/archive/v0.8.8.4.tar.gz"
+    sha1 "57a0d6cf54a2fb8171b0b746d5c0db1b9eb877c5"
+  end
 
   depends_on "cmake" => :build
   depends_on "boost"
-  depends_on "unbound"
   depends_on "miniupnpc" => :optional
 
   bottle do
