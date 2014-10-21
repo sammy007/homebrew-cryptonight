@@ -21,6 +21,7 @@ class Bitmonero < Formula
     cellar :any
     revision 1
     root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.4"
+    sha1 "12bd0a604a4f18da8662832aaacae4de48bd2dd3" => :yosemite
     sha1 "3c06ca8f9e93d7cee4843933a7619f355af324b3" => :mavericks
   end
 
