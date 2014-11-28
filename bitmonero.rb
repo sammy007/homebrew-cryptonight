@@ -38,6 +38,9 @@ class Bitmonero < Formula
   end
 
   def caveats; <<-EOS.undent
+    If you installed precompiled bottle remember that it's unofficial OS X build. You can always build it from source:
+        brew install bitmonero --build-from-source
+
     In order to speed up blockchain synchronization process, download fresh blockchain bootstrap:
         mkdir ~/.bitmonero
         wget -c http://monero.cc/downloads/blockchain/mac/blockchain.bin -O ~/.bitmonero/blockchain.bin
