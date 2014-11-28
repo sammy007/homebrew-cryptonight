@@ -36,4 +36,11 @@ class Bitmonero < Formula
         "./build/release/src/connectivity_tool"
     end
   end
+
+  def caveats; <<-EOS.undent
+    In order to speed up blockchain synchronization process, download fresh blockchain bootstrap:
+        mkdir ~/.bitmonero
+        wget -c http://monero.cc/downloads/blockchain/mac/blockchain.bin -O ~/.bitmonero/blockchain.bin
+    EOS
+  end
 end
