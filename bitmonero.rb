@@ -27,7 +27,13 @@ class Bitmonero < Formula
 
   def install
     system "make"
-    bin.install "./build/release/src/bitmonerod", "./build/release/src/simplewallet",
-      "./build/release/src/connectivity_tool"
+
+    if build.head?
+      bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet",
+        "./build/release/bin/connectivity_tool"
+    else
+      bin.install "./build/release/src/bitmonerod", "./build/release/src/simplewallet",
+        "./build/release/src/connectivity_tool"
+    end
   end
 end
