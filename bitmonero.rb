@@ -20,9 +20,10 @@ class Bitmonero < Formula
 
   bottle do
     cellar :any
+    revision 1
     root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.5"
-    sha1 "f6f7d63b19294f4fc1f875758bde2913b04a787b" => :yosemite
-    sha1 "ba22ad8154911d1c26e92430f5b46ab6455d1fca" => :mavericks
+    sha1 "14c13a97e2226c11a8cff99f6ef66f3a4e90449d" => :yosemite
+    sha1 "4d82557d40b93b3209b66b37a9936816b0dd686e" => :mavericks
   end
 
   def install
