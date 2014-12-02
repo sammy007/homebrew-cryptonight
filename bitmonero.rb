@@ -5,36 +5,31 @@ class Bitmonero < Formula
 
   head do
     url "https://github.com/monero-project/bitmonero.git"
-    depends_on "unbound"
   end
 
   stable do
-    url "https://github.com/monero-project/bitmonero/archive/v0.8.8.4.tar.gz"
-    sha1 "57a0d6cf54a2fb8171b0b746d5c0db1b9eb877c5"
+    url "https://github.com/monero-project/bitmonero/archive/v0.8.8.5.tar.gz"
+    sha1 "b130f9f9568fd24ded907ac24921ac39d48067e2"
   end
 
   depends_on "cmake" => :build
   depends_on "boost"
+  depends_on "libevent"
+  depends_on "unbound" => :optional
   depends_on "miniupnpc" => :optional
 
   bottle do
     cellar :any
-    revision 1
-    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.4"
-    sha1 "12bd0a604a4f18da8662832aaacae4de48bd2dd3" => :yosemite
-    sha1 "3c06ca8f9e93d7cee4843933a7619f355af324b3" => :mavericks
+    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.5"
+    sha1 "f6f7d63b19294f4fc1f875758bde2913b04a787b" => :yosemite
+    sha1 "ba22ad8154911d1c26e92430f5b46ab6455d1fca" => :mavericks
   end
 
   def install
     system "make build-release"
 
-    if build.head?
-      bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet",
-        "./build/release/bin/connectivity_tool"
-    else
-      bin.install "./build/release/src/bitmonerod", "./build/release/src/simplewallet",
-        "./build/release/src/connectivity_tool"
-    end
+    bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet",
+      "./build/release/bin/connectivity_tool"
   end
 
   def caveats; <<-EOS.undent
