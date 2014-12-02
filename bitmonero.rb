@@ -26,7 +26,7 @@ class Bitmonero < Formula
   end
 
   def install
-    system "make"
+    system "make build-release"
 
     if build.head?
       bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet",
