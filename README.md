@@ -24,13 +24,6 @@ and copy it to `~/.bitmonero/` directory.
 
 There will be conflict, because `simplewallet` appears in both XMR and AEON, so one formula have to be keg-only.
 
-### Boolberry
-
-`brew install --HEAD boolberry`
-
-You can download [Mac blockchain.bin](https://mega.co.nz/#!T80CVCpI!ZRJS5fXTURD5wjofDdsC3_H3OBEmUgbox-CJBMzBeLk)
-and move it to `~/Library/Application\ Support/boolb/blockchain.bin`
-
 ### Quazar
 
 `brew install --HEAD quazarcoin`
@@ -62,7 +55,5 @@ If You Like It
 **XMR**: `45pyCXYn2UBVUmCFjgKr7LF8hCTeGwucWJ2xni7qrbj6GgAZBFY6tANarozZx9DaQqHyuR1AL8HJbRmqwLhUaDpKJW4hqS1`
 
 **AEON**: `WmsaRpEdLLDN8zvnu4jNfTaiU9WvmuCneSHUuXgsPBYidgcptkggNroX1r4Y9jyUewNohrkuGRyegFpYrBMYbovs1h16wLXhC`
-
-**BBR**: `1Cf9omYfkxZ1qwxpSCsQ5PTsf6JX7zKt4L63BFijUFQ1eECK3Dt2agPCu62vSSBnDkXyBr691WVpKC5dw4GiNNySHzF4vS2`
 
 **QCN**: `1N4FnxwCH8WjHDKCEGBzSL1GDY4pMkcyaKmZyDF78CoiGgRPjzPtYyjKTehmaVZPQTRJAxJyF1X9wE7kjQTjDVWKGgdEjoH`
