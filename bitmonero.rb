@@ -8,8 +8,8 @@ class Bitmonero < Formula
   end
 
   stable do
-    url "https://github.com/monero-project/bitmonero/archive/v0.8.8.5.tar.gz"
-    sha1 "f7b59d486cbfcbc4a2c056549ded734fbce2de8d"
+    url "https://github.com/monero-project/bitmonero/archive/v0.8.8.6.tar.gz"
+    sha1 "cf3f1cf63a6a73e49bf85c6a1606569058240c45"
   end
 
   depends_on "cmake" => :build
@@ -20,10 +20,9 @@ class Bitmonero < Formula
 
   bottle do
     cellar :any
-    revision 1
-    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.5"
-    sha1 "14c13a97e2226c11a8cff99f6ef66f3a4e90449d" => :yosemite
-    sha1 "4d82557d40b93b3209b66b37a9936816b0dd686e" => :mavericks
+    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.6"
+    sha1 "5ae9afc1aa50ba445615181901330f65d6dfaafa" => :yosemite
+    sha1 "34a4e96f7e785708271a627204953801bd4e8f95" => :mavericks
   end
 
   def install
