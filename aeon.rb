@@ -1,9 +1,9 @@
 require "formula"
 
 class Aeon < Formula
-  homepage "https://github.com/iamsmooth/aeon"
+  homepage "https://github.com/aeonix/aeon"
 
-  head "https://github.com/iamsmooth/aeon.git"
+  head "https://github.com/aeonix/aeon.git"
 
   depends_on "cmake" => :build
   depends_on "boost"
