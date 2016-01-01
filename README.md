@@ -1,6 +1,6 @@
 Homebrew-CryptoNight
 ====================
-Monero (XMR), AEON, Quazarcoin (QCN) formulas for [Homebrew](http://brew.sh). Tested on Mac OS X 10.9 and 10.10.
+Monero and AEON formulas for [Homebrew](http://brew.sh).
 
 Wallets
 -------
@@ -22,32 +22,7 @@ and copy it to `~/.bitmonero/` directory.
 
 `brew install --HEAD aeon`
 
-There will be conflict, because `simplewallet` appears in both XMR and AEON, so one formula have to be keg-only.
-
-### Quazar
-
-`brew install --HEAD quazarcoin`
-
-There will be conflict, because `simplewallet` appears in both XMR and QCN, so one formula have to be keg-only.
-
-You can download [Mac 64bit blockchain](https://mega.co.nz/#!wZNwmZzS!QLG989DwzJUkVnG9vPN391IKFiA3w0DPQikmkTyYaDY)
-and move it to `~/.quazarcoin/blockchain.bin` in order to speed up synchronization.
-
-CPU Mining
-----------
-
-Build CPU miner:
-
-`brew install --HEAD cpuminer-multi`
-
-This is LucasJones's version, I'll switch this formula to much efficient wolf9466's fork as soon as he fix building on OS X.
-
-**Mine Monero on** [hashinvest.net](http://hashinvest.net) pool.
-
-TODO
-----
-
-1. Switch to wolf9466's fork of cpuminer-multi.
+There will be conflict, because `simplewallet` appears in both XMR and AEON, so one formula will be keg-only.
 
 If You Like It
 --------------
@@ -55,5 +30,3 @@ If You Like It
 **XMR**: `45pyCXYn2UBVUmCFjgKr7LF8hCTeGwucWJ2xni7qrbj6GgAZBFY6tANarozZx9DaQqHyuR1AL8HJbRmqwLhUaDpKJW4hqS1`
 
 **AEON**: `WmsydZEeWrSCWCftoSNZF42EzCbkYhSgSZmGVC5QdJB78DFJEQ1XZTcWchV1dVnpHd2m7TjoGHwb5627nc2yVqEe1JSj4Q9q4`
-
-**QCN**: `1N4FnxwCH8WjHDKCEGBzSL1GDY4pMkcyaKmZyDF78CoiGgRPjzPtYyjKTehmaVZPQTRJAxJyF1X9wE7kjQTjDVWKGgdEjoH`
