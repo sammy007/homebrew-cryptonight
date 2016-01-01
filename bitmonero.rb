@@ -1,18 +1,19 @@
 require "formula"
 
 class Bitmonero < Formula
-  homepage "http://monero.cc"
+  homepage "https://getmonero.org"
 
   head do
     url "https://github.com/monero-project/bitmonero.git"
   end
 
   stable do
-    url "https://github.com/monero-project/bitmonero/archive/v0.8.8.6.tar.gz"
-    sha1 "cf3f1cf63a6a73e49bf85c6a1606569058240c45"
+    url "https://github.com/monero-project/bitmonero/archive/v0.9.0.tar.gz"
+    sha1 "a7603172f0360561e505c4a264d1d1b64ca0300e"
   end
 
   depends_on "cmake" => :build
+  depends_on "pkgconfig" => :build
   depends_on "boost"
   depends_on "libevent"
   depends_on "unbound" => :optional
@@ -20,18 +21,12 @@ class Bitmonero < Formula
 
   bottle do
     cellar :any
-    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.8.8.6"
-    sha1 "5ae9afc1aa50ba445615181901330f65d6dfaafa" => :yosemite
-    sha1 "34a4e96f7e785708271a627204953801bd4e8f95" => :mavericks
+    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.9.0"
+    sha256 "5d1c749cb03adabad80eb4f742d8b65c45f5ff635b7c196c483586adc59e7ef9" => :el_capitan
   end
 
   def install
-    if build.head?
-      system "make release"
-    else
-      system "make build-release"
-    end
-
+    system "make release"
     bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet",
       "./build/release/bin/connectivity_tool"
   end
