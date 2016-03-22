@@ -8,8 +8,8 @@ class Bitmonero < Formula
   end
 
   stable do
-    url "https://github.com/monero-project/bitmonero/archive/v0.9.2.tar.gz"
-    sha256 "100aff68ae56ee4fe1a897e4047cbf4fcc4ab774f8af56be55d9660602e04b68"
+    url "https://github.com/monero-project/bitmonero/archive/v0.9.3.tar.gz"
+    sha256 "2da6624daaa0f6862d2452e606726db13fe6c6493405dea262237f387dea560d"
   end
 
   depends_on "cmake" => :build
@@ -21,8 +21,8 @@ class Bitmonero < Formula
 
   bottle do
     cellar :any
-    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.9.2"
-    sha256 "19c08f86b214dc200b43390442676cc5fcbe2ea7d7f77d6fe6aedaf0ed2858ea" => :el_capitan
+    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.9.3"
+    sha256 "990de9c511dd13e36948429e53d9433aee376e4e0bef36d062e124070eb4958a" => :el_capitan
   end
 
   def install
