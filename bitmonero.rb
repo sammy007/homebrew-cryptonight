@@ -8,8 +8,8 @@ class Bitmonero < Formula
   end
 
   stable do
-    url "https://github.com/monero-project/bitmonero/archive/v0.9.3.tar.gz"
-    sha256 "2da6624daaa0f6862d2452e606726db13fe6c6493405dea262237f387dea560d"
+    url "https://github.com/monero-project/bitmonero/archive/v0.9.4.tar.gz"
+    sha256 "b0dfb84181babb92ab1dd12272e1f4a6b8ddec9af61e579a53c9489181afd0ce"
   end
 
   depends_on "cmake" => :build
@@ -21,14 +21,13 @@ class Bitmonero < Formula
 
   bottle do
     cellar :any
-    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.9.3"
-    sha256 "990de9c511dd13e36948429e53d9433aee376e4e0bef36d062e124070eb4958a" => :el_capitan
+    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.9.4"
+    sha256 "bb5ceedd6d479c0e5c06a50f817c04b4e93afde91b88a0ceb63a4e194daef60c" => :el_capitan
   end
 
   def install
     system "make release"
-    bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet",
-      "./build/release/bin/connectivity_tool"
+    bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet"
   end
 
   def caveats; <<-EOS.undent
