@@ -1,6 +1,6 @@
 require "formula"
 
-class Bitmonero < Formula
+class Monero < Formula
   homepage "https://getmonero.org"
 
   head do
@@ -19,20 +19,8 @@ class Bitmonero < Formula
   depends_on "unbound" => :optional
   depends_on "miniupnpc" => :optional
 
-  bottle do
-    cellar :any
-    root_url "https://github.com/sammy007/homebrew-cryptonight/releases/download/monero-v0.9.4"
-    sha256 "bb5ceedd6d479c0e5c06a50f817c04b4e93afde91b88a0ceb63a4e194daef60c" => :el_capitan
-  end
-
   def install
     system "make release"
     bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet"
-  end
-
-  def caveats; <<-EOS.undent
-    If you installed precompiled bottle remember that it's unofficial OS X build. You can always build it from source:
-        brew install bitmonero --build-from-source
-    EOS
   end
 end
