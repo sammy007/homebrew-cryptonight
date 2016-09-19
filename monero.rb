@@ -4,7 +4,7 @@ class Monero < Formula
   homepage "https://getmonero.org"
 
   head do
-    url "https://github.com/monero-project/bitmonero.git"
+    url "https://github.com/monero-project/monero.git"
   end
 
   stable do
