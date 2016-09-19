@@ -8,8 +8,8 @@ class Monero < Formula
   end
 
   stable do
-    url "https://github.com/monero-project/bitmonero/archive/v0.9.4.tar.gz"
-    sha256 "95d609de821d1cefab4055f78220db20b1101c1d4fefc91eae5516f047de5187"
+    url "https://github.com/monero-project/monero/archive/v0.10.0.tar.gz"
+    sha256 "c6c186267b45dae62196e7904c3983adaa4f791784ee11baa13054d5bdfc5d9b"
   end
 
   depends_on "cmake" => :build
@@ -21,6 +21,7 @@ class Monero < Formula
 
   def install
     system "make release"
-    bin.install "./build/release/bin/bitmonerod", "./build/release/bin/simplewallet"
+    bin.install "./build/release/bin/monerod", "./build/release/bin/monero-wallet-cli",
+      "./build/release/bin/monero-blockchain-import", "./build/release/bin/monero-blockchain-export"
   end
 end
