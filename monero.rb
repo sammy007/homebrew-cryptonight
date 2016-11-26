@@ -2,6 +2,7 @@ require "formula"
 
 class Monero < Formula
   homepage "https://getmonero.org"
+  desc "Monero: the secure, private, untraceable cryptocurrency"
 
   head do
     url "https://github.com/monero-project/monero.git"
