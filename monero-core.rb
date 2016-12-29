@@ -17,6 +17,6 @@ class MoneroCore < Formula
   def install
     system "./get_libwallet_api.sh"
     system "./build.sh"
-    prefix.install "build/release/bin/monero-core.app"
+    prefix.install "build/release/bin/monero-wallet-gui.app"
   end
 end
