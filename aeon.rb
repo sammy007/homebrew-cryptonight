@@ -9,8 +9,8 @@ class Aeon < Formula
   end
 
   stable do
-    url "https://github.com/aeonix/aeon/archive/v0.9.7.1.tar.gz"
-    sha256 "2094419097ca6c5c48258e73dc2e0627732714fe00cfe8951469f05f6993280a"
+    url "https://github.com/aeonix/aeon/archive/v0.9.8.0.tar.gz"
+    sha256 "b405de9336f9dd209b3b0b370c080c19a3a529d2e3305faca7170ad532856bc7"
   end
 
   depends_on "cmake" => :build
