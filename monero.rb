@@ -17,8 +17,6 @@ class Monero < Formula
   depends_on "pkgconfig" => :build
   depends_on "boost"
   depends_on "libevent"
-  depends_on "unbound" => :optional
-  depends_on "miniupnpc" => :optional
 
   def install
     system "make release"
