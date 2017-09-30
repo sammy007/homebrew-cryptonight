@@ -25,7 +25,7 @@ brew linkapps monero-core
 
 ### Aeon
 
-`brew install --HEAD aeon`
+`brew install aeon`
 
 Donations
 --------------
