@@ -9,8 +9,8 @@ class Monero < Formula
   end
 
   stable do
-    url "https://github.com/monero-project/monero/archive/v0.11.0.0.tar.gz"
-    sha256 "93c217cf10624d6e93cd1db5d137310be8b23393400014e2c8808d5214207c20"
+    url "https://github.com/monero-project/monero/archive/v0.11.1.0.tar.gz"
+    sha256 "b5b48d3e5317c599e1499278580e9a6ba3afc3536f4064fcf7b20840066a509b"
   end
 
   depends_on "cmake" => :build
