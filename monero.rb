@@ -1,26 +1,27 @@
 require "formula"
 
 class Monero < Formula
-  homepage "https://getmonero.org"
   desc "Monero: the secure, private, untraceable cryptocurrency"
+  homepage "https://getmonero.org"
 
-  head do
-    url "https://github.com/monero-project/monero.git"
-  end
-
-  stable do
-    url "https://github.com/monero-project/monero/archive/v0.11.1.0.tar.gz"
-    sha256 "b5b48d3e5317c599e1499278580e9a6ba3afc3536f4064fcf7b20840066a509b"
-  end
+  url "https://github.com/monero-project/monero.git", :tag => "v0.12.0.0"
 
   depends_on "cmake" => :build
   depends_on "pkgconfig" => :build
   depends_on "boost"
   depends_on "libevent"
+  depends_on "readline"
+  depends_on "zeromq"
+
+  resource "cppzmq" do
+    url "https://raw.githubusercontent.com/zeromq/cppzmq/7a8cc9d7cf448b8fd654ec4cd24fd48b57a76162/zmq.hpp"
+    sha256 "eeccec908d78bc195d093fb05a37271b3f7a62ec65b026b6f0b8d801d9b966da"
+  end
 
   def install
-    system "make release"
-    bin.install "./build/release/bin/monerod", "./build/release/bin/monero-wallet-cli",
-      "./build/release/bin/monero-blockchain-import", "./build/release/bin/monero-blockchain-export"
+    resource("cppzmq").stage include.to_s
+
+    system "cmake", ".", *std_cmake_args
+    system "make", "install"
   end
 end
