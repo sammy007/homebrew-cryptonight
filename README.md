@@ -7,6 +7,9 @@ Add this tap: `brew tap sammy007/cryptonight`
 
 ### Monero
 
+NOTE: As of now, there is a monero formula which installs an older version. 
+To prioritize this tap, run `brew tap-pin sammy007/cryptonight` before installation.
+
 Install latest stable release: `brew install monero`
 
 Install from git `master` branch: `brew install --HEAD -v monero`
